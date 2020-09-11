@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <application name="SAPProvider">
+        <serviceProfile
+            name="sapsample"
+            id="/system/sapsample"
+            role="provider"
+            serviceImpl="com.example.sapprovider.SAPServiceProvider"
+            serviceLimit="ANY"
+            serviceTimeout="10"
+            version="1.0">
+            <supportedTransports>
+                <transport type="TRANSPORT_WIFI" />
+            </supportedTransports>
+            <serviceChannel
+                id="123"
+                dataRate="high"
+                priority="high"
+                reliability="enable" />
+        </serviceProfile>
+    </application>
+</resources>
